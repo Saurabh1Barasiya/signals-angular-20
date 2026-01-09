@@ -1,0 +1,9 @@
+@for(prod of allData();track prod.id){
+  <ul>
+    <li>{{prod.id}}</li>
+    <li>{{prod.title}}</li>
+    <li>{{prod.stock}}</li>
+    <li>{{prod.price}}</li>
+  </ul>
+}
+<router-outlet />
