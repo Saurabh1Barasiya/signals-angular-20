@@ -1,0 +1,23 @@
+<h1>Hi i am component B</h1>
+@for(item of fruits();track $index){
+    <li>{{item}}</li>
+}
+<button (click)="addNewFruit()">add fruit</button>
+<hr>
+@for(us of data();track $index){
+    <p>Name is {{us.name}}</p>
+    <p>Age is {{us.age}}</p>
+    <p>Address is {{us.address}}</p>
+}
+
+<button (click)="addNewUser()">add user</button>
+<button (click)="updateSaurabh()">update saurabh</button>
+<button (click)="removeSaurabh()">remove saurabh</button>
+<button (click)="updateSaurabhAge()">update saurabh age</button>
+
+<hr>
+
+<p>name {{suhani().name}}</p>
+<p>age {{suhani().age}}</p>
+<p>surname {{suhani().surname}}</p>
+<button (click)="updateSuhani()">update suhani</button>

@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<h1>Hello Saurabh</h1>
+<p>signal value {{count()}}</p>
+<button (click)="inc()">inc</button>
+<button (click)="dec()">dec</button>
+<button (click)="reset()">reset</button>
+<hr>
+<h1>computed signal</h1>
+
+<ul>
+  <li>price {{price()}}</li>
+  <li>price {{quentity()}}</li>
+  <li>Total price {{totel()}}</li>
+  <li><button (click)="incQuantity()">+</button></li>
+  <li><button (click)="decQuantity()">-</button></li>
+  <li><button (click)="priceUpdate()" >Update price</button></li>
+</ul>
+<hr>
+<app-comp-a></app-comp-a>
+<hr>
+<app-cmp-b></app-cmp-b>
+<router-outlet />
