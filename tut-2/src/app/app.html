@@ -1,0 +1,25 @@
+<button (click)="getData()">get data</button>
+
+@if(loading()){
+  <p>loading...</p>
+}@else {
+  @for(prod of productData();track prod.id){
+    <ul>
+      <li>{{prod.category}}</li>
+      <li>{{prod.description|slice:0:9}}</li>
+      <li>{{prod.discountPercentage}}</li>
+      <li>{{prod.id}}</li>
+      <li>{{prod.price}}</li>
+      <li>{{prod.rating}}</li>
+      <li>{{prod.stock}}</li>
+      <li>{{prod.title}}</li>
+    </ul>
+  }@empty{
+    <p>no data </p>
+  }
+}
+
+
+
+
+<router-outlet />
