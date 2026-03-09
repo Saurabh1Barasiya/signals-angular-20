@@ -1,0 +1,26 @@
+<h1 [ngStyle]="{'text-align':'center'}">learing about signals</h1>
+
+
+<div class="container" [ngStyle]="{'text-align':'center'}">
+  <h3>{{count()}}</h3>
+  <button (click)="inc()">+</button>
+  <button (click)="dec()">-</button>
+  <button (click)="reset()">reset</button>
+</div>
+
+<hr>
+
+<div class="container" [ngStyle]="{'text-align':'center'}">
+  @for(nums of numIteams(); track $index){
+    <span>{{nums}}</span>
+  }
+
+  <button (click)="addNumber()">Add Numbers</button>
+  <button (click)="deleteNumber()">deleteNumber</button>
+</div>
+<hr>
+
+<app-array-practice></app-array-practice>
+
+
+<router-outlet />

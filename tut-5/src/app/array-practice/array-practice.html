@@ -1,0 +1,18 @@
+<h1 [ngStyle]="{'text-align':'center'}">Array manupalations concepts</h1>
+
+<div class="container" [ngStyle]="{'text-align':'center'}">
+    <ul>
+        @for(items of importentPart(); track $index){
+           <p>
+            <span>{{items}}</span>
+            <button (click)="deleteItems($index)">delete</button>
+            <button (click)="updateItems($index)">update</button>
+          </p> 
+        }
+    </ul>
+
+    <input type="text" [(ngModel)]="inputVal"> <button (click)="addItems()">Add items</button>
+
+
+    <button (click)="replaceAllItems()">Replace all items</button>
+</div>
