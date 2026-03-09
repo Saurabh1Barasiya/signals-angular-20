@@ -1,0 +1,18 @@
+
+<button (click)="getData()">get data</button>
+
+@if(loading()){
+  <p>loading...</p>
+}
+@for (item of cart(); track item.id) {
+  <ul>
+    <li>{{item.id}}</li>
+    <li>{{item.total}}</li>
+    <li>{{item.discountedTotal}}</li>
+    <li>{{item.totalProducts}}</li>
+    <li>{{item.totalQuantity}}</li>
+    <li>{{item.userId}}</li>
+  </ul>
+}
+
+<router-outlet />
