@@ -1,0 +1,19 @@
+<div class="container" [ngStyle]="{'text-align':'center'}">
+  <h1>Name : {{user().name}}</h1>
+  <h1>Age : {{user().age}}</h1>
+  <h1>city : {{user().city}}</h1>
+
+  <button (click)="updateName()">update name</button>
+  <button (click)="updateAge()">update age</button>
+  <button (click)="updateCity()">update city</button>
+  <button (click)="setInitial()">set initaial value</button>
+
+   <button (click)="deleteName()">delete name</button>
+   <button (click)="deleteAge()">delete age</button>
+   <button (click)="deleteCity()">delete city</button>
+
+</div>
+
+
+
+<router-outlet />
