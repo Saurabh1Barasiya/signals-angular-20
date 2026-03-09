@@ -1,0 +1,10 @@
+<div class="container" [ngStyle]="{'text-align':'center'}">
+  <p>Current price {{this.price()}} </p>
+  <p>Current quentity {{this.quentity()}} </p>
+  <h3>Totel Price {{totel()}} </h3>
+
+  <button (click)="incPrice()">inc price</button>
+  <button (click)="incQuentity()">inc quentity</button>
+</div>
+
+<router-outlet />
